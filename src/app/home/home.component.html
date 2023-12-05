@@ -1,0 +1,273 @@
+<div class="container-fluid" style="margin-bottom: 20px;">
+    <!-- <app-navbar></app-navbar> -->
+   <!-- <div style="display: flex;justify-content: center;align-items: center;margin-top: 5px;"> <h2>Product Details</h2></div> -->
+   
+
+
+    <div class="row">
+        <div class=" col-12 col-md-7">
+            <div style="width: auto; ">
+                <div >
+                  <div class="image-container" (click)="openModel()">
+                    <!-- <img (click)="openModel() " [src]="selectedImage" alt="Your Image" class="additional-image" > -->
+                    <img  [src]="selectedImage" alt="Your Image" class="additional-image">
+
+                    <div class="overlay"></div>
+                  </div>
+                  
+                </div>
+            </div>
+            <div  *ngIf="message">
+              <img [src]="selectedImage1" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;"[class.selected-image]="selectedImageIndex === 0"(click)="onChangeImages(0)" (click)="onChangeImage('selectedImage1')">
+              <img [src]="selectedImage2" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 1" (click)="onChangeImages(1)"(click)="onChangeImage('selectedImage2')">
+              <img [src]="selectedImage3" alt="Your Image" [class.selected-image]="selectedImageIndex === 2" (click)="onChangeImages(2)" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 3" (click)="onChangeImages(3)" (click)="onChangeImage('selectedImage3')">
+                <img [src]="selectedImage4" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;"  [class.selected-image]="selectedImageIndex === 4" (click)="onChangeImages(4)"(click)="onChangeImage('selectedImage4')">
+                <!-- <img [src]="selectedImage5" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 5" (click)="onChangeImages(5)" (click)="onChangeImage('selectedImage5')"> -->
+                <img [src]="selectedImage6" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 6" (click)="onChangeImages(6)" (click)="onChangeImage('selectedImage6')">
+                
+                <img [src]="selectedImage7" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 7" (click)="onChangeImages(7)" (click)="onChangeImage('selectedImage7')">
+                <img [src]="selectedImage8" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 8" (click)="onChangeImages(8)" (click)="onChangeImage('selectedImage8')">
+                <img [src]="selectedImage10" alt="Your Image" class="additional-image"
+                style="width:73px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 9" (click)="onChangeImages(9)" (click)="onChangeImage('selectedImage9')">
+         
+              <!-- <app-model-viewer [src]="sanitizeUrl(yourDynamicUrl)"></app-model-viewer> -->
+
+              </div>
+            
+           
+            
+           
+        </div>
+        <div class=" col-12 col-md-5" style="margin-top: 20px;">
+             <h3>Adorn India Raptor Sofa (Beige)</h3>
+             <a href="https://www.homecentre.in/in/en/Living-Room/Recliners/1-Seater-Recliners/HOMECENTRE-Stockholm-Half-Leather-1-Seater-Electric-Recliner--Cream/p/1000012342815" style="text-decoration: none;"><h5 style="color: #007185;font-size: 12px;font-weight: 800;">Visit the homecentre Store</h5></a>
+             
+             <hr>
+             <div style=" align-items: center;">
+
+                <div style="display: flex;">
+                  <h2 style="color: red; margin-right: 5px;">-55%</h2>
+                    <h3>&#8377;17,999.00</h3>
+                </div>
+                <div style="display: flex; align-items: center; font-size: 14px; color: #7c7e7e;">
+                  <div style="margin-right: 10px;">M.R.P.:</div>
+                  <h5 style="text-decoration: line-through; margin: 0; font-size: 14px;">32,725.00</h5>
+                </div>
+                <div>
+                  <div style="font-size: 14px; font-weight: 500;">Inclusive of all taxes</div>
+                  <div><span style="font-size: 14px ; font-weight: 600;">EMI</span> <span style="font-size: 14px;"> starts at ₹412. No Cost EMI available</span></div>
+                </div>
+                <hr style="margin-bottom: 5px;">
+                <div style="display: flex; align-items: center;">
+                  <img src="assets/images/images_offer.png" style="width: 3%; height: fit-content; margin-right: 5px;">
+                  <div>offers</div>
+                  
+                </div>
+                
+                
+             </div>
+             <div class="card-class mt-2 d-flex flex-wrap">
+              <div class="card mb-3" style="max-width: 8rem;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-right: 5px;">
+                <div class="card-body" style="padding: 5px;">
+                  <h5 class="card-title" style="font-size: 14px;">Bank offer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px;">Upto ₹637.42 discount on YES Bank Credit Cards</h6>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 8rem;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);margin-right: 5px;">
+                <div class="card-body" style="padding: 5px;">
+                  <h5 class="card-title" style="font-size: 14px;">Bank offer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px;">Upto ₹382.70 EMI interest savings on Amazon Pay ICICI…</h6>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 8rem;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);margin-right: 5px;">
+                <div class="card-body" style="padding: 5px;">
+                  <h5 class="card-title" style="font-size: 14px;">Bank offer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px;">Get GST invoice and save up to 28% on business purchases.</h6>
+                </div>
+              </div>
+            </div>
+            
+            <hr>
+             
+             <!-- <p style="font-size: 14px;">
+                Introducing our latest sofa – a sleek and contemporary addition to your living space.
+                With its modern design, plush cushions, and attention to detail,
+                this sofa seamlessly combines style and comfort.
+                Elevate your home decor with this chic and inviting piece,
+                crafted for both aesthetics and relaxation.
+                Upgrade your space with the latest in stylish and comfortable seating.</p> -->
+                <!-- <p style="margin: 0; color: #0B7EF5;" *ngIf="message">Matching style and fabric design is out of stock</p> -->
+                <div class="container">
+                <div>
+                    <div class="no-decoration" style="list-style: none; margin-top: 20px; display: flex;">
+                        <div *ngFor="let image of images">
+                            <img  [class.selected]="image === selectedImages" [src]="image" alt="Your Image" class="additional-image"
+                                style="width: 50px; border-radius: 5px; margin-right: 10px;"
+                                (click)="displayImage(image)">
+                        </div>
+                    </div>
+                    
+                </div> 
+                <!-- <div style="margin-top: 10px;">
+                      <label for="seatingDropdown">Style: </label>
+                    <select id="seatingDropdown" name="fabrics" style="margin-left: 5px;" [(ngModel)]="selectedStyle" (ngModelChange)="onStyleChange()" >
+                      
+                            <option selected value="" disabled>Select style</option>
+                          <option *ngFor="let option of styleOptions" [value]="option.value" >{{option.label}}</option>
+                        </select>
+                  </div>
+                <div style="margin-top: 10px;">
+
+                    <label for="seatingDropdown">Fabric: </label>
+                    <select id="seatingDropdown" name="fabrics" style="margin-left: 5px; font-size: 14px;" [(ngModel)]="selectedFabric" (ngModelChange)="onFabricChange()" >
+                        <option selected value="" disabled>Select fabric</option>
+                      <option *ngFor="let option of fabricOptions" [value]="option.value" >{{ option.label }}</option>
+                    </select>
+                  </div> -->
+<div>
+                  <div style="margin-top: 10px;">
+                    <label for="styleDropdown" style="font-size: 16px; font-weight: 600;">Style: </label>
+                    <select id="styleDropdown" name="styles" style="margin-left: 13px;border: 1px solid white;font-size: 16px;" [(ngModel)]="selectedStyle" (ngModelChange)="onStyleChange()">
+                        <option selected value="" disabled>Select style</option>
+                        <option *ngFor="let option of styleOptions" [value]="option.value">
+                          {{ option.label }}
+                          <img  *ngFor="let option of styleOptions" src='{{option.image}}' width="5%" height="5%"> 
+                          <!-- <img src="{{option.image}}" alt="Style Image" style="width: 50px; height: 50px;"> -->
+                        </option>
+                      </select>
+                      
+                   
+                  </div>
+                  
+                  <div style="margin-top:5px;">
+                    <label for="fabricDropdown" style="font-size: 16px; font-weight: 600;">Fabric: </label>
+                    <select id="fabricDropdown" name="fabrics" style="margin-left: 5px; font-size: 16px;border: 1px solid white;" [(ngModel)]="selectedFabric" (ngModelChange)="onFabricChange()">
+                      <option selected value="" disabled>Select fabric</option>
+                      <option *ngFor="let option of fabricOptions" [value]="option.value">{{ option.label }}</option>
+                    </select>
+                  </div>
+                
+                <div class="pr_switch_wrap" style="display: flex; align-items: center; margin-top: 5px;">
+                <span class="switch_label" style="font-size: 16px; font-weight: 600;">Color:</span>
+                <div class="product_color_switch" style="display: flex; align-items: center;margin-left: 12px;">
+                    <span class="color-swatch" style="background-color: #B3A696;" (mouseenter)="updateImage('1')" (click)="updateImage('1')"></span>
+                    <span class="color-swatch" style="background-color: #5C4F47;" (mouseenter)="updateImage('2')" (click)="updateImage('2')"></span>
+                    <span class="color-swatch" style="background-color: #2E3E56;"(mouseenter)="updateImage('3')" (click)="updateImage('3')"></span>
+                    <span class="color-swatch" style="background-color: #8F3E44;"(mouseenter)="updateImage('4')" (click)="updateImage('4')"></span>
+                </div>
+              </div>
+            </div>
+           
+            <div class="modal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" >
+                    <p>Modal body text goes here.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+             
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal" style="background-color:rgb(0 0 0 / 85%);">
+  <div class="modal-dialog"  style="width: 70%; max-width: 70%;height: fit-content;">
+    <div class="modal-content" style="width: 100%; height: 100%;">
+
+      <!-- Modal Header -->
+      <div class="modal-header document">
+        <!-- <h4 class="modal-title">{{selectedDocument}}</h4> -->
+        <button type="button" class="btn-close" (click)="closeModel()" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <p class="sample-text"></p>
+      <p class="notice">
+         <div class="row">
+             <div class="col-12">
+            <div class="image-containers">
+           
+            <img  [src]="selectedImage" alt="Your Image"  style="width: 60%; height: 70%;"class="additional-image">
+          </div>
+        <div class="row">
+            <!-- <div class="overlay"></div> -->
+            <div style="margin-left: 40px; margin-top: 20px; display: flex;"  *ngIf="message">
+              <img [src]="selectedImage1" alt="Your Image" class="additional-images"
+                style="  width:83px; margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;"[class.selected-image]="selectedImageIndex === 0"(click)="onChangeImages(0)" (click)="onChangeImage('selectedImage1')">
+              <img [src]="selectedImage2" alt="Your Image" class="additional-images"
+                style="width:83px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 1" (click)="onChangeImages(1)"(click)="onChangeImage('selectedImage2')">
+              <img [src]="selectedImage3" alt="Your Image" [class.selected-image]="selectedImageIndex === 2" (click)="onChangeImages(2)" class="additional-images"
+                style="width:83px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 3" (click)="onChangeImages(3)" (click)="onChangeImage('selectedImage3')">
+                <img [src]="selectedImage4" alt="Your Image" class="additional-images"
+                style="width:83px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;"  [class.selected-image]="selectedImageIndex === 4" (click)="onChangeImages(4)"(click)="onChangeImage('selectedImage4')">
+                <img [src]="selectedImage5" alt="Your Image" class="additional-images"
+                style="width:83px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 5" (click)="onChangeImages(5)" (click)="onChangeImage('selectedImage5')">
+                <!-- <img [src]="selectedImage6" alt="Your Image" class="additional-images"
+                style="width:63px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 6" (click)="onChangeImages(6)" (click)="onChangeImage('selectedImage6')">
+                
+                <img [src]="selectedImage7" alt="Your Image" class="additional-images"
+                style="width:63px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 7" (click)="onChangeImages(7)" (click)="onChangeImage('selectedImage7')">
+                <img [src]="selectedImage8" alt="Your Image" class="additional-images"
+                style="width:63px;margin-right: 5px;border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 8" (click)="onChangeImages(8)" (click)="onChangeImage('selectedImage8')"> -->
+                <img [src]="selectedImage10" alt="Your Image" class="additional-images"
+                style="width:83px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 9" (click)="onChangeImages(9)" (click)="onChangeImage('selectedImage9')">
+                <a style="text-decoration: none;color: black;" href="3d">
+                <img [src]="selectedImage11" alt="Your Image" class="additional-images"
+                style="width:83px;margin-right: 5px; border-radius: 4px;  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;" [class.selected-image]="selectedImageIndex === 11" (click)="onChangeImages(11)" (click)="onChangeImage('selectedImage11')">
+                </a>
+              <!-- <app-model-viewer  style="width:75px; height: 50px;margin-right: 5px;"  ></app-model-viewer>  -->
+              </div>
+              <!-- <div></a></div> -->
+            </div>
+          </div>
+         
+        </div>
+   
+    <!-- </p> -->
+      <div class="modal-body"style="cursor: pointer;padding: 5%;">
+      
+        <!-- <input type="file" id="documentInput"  hidden value="document"> -->
+       
+       
+        <!-- <img src="assets/images/{{selectedDocument}}.svg" alt="sample dl image" style="display: block;margin: auto;"> -->
+        <!-- <button class="plain-button" >Click here to select {{selectedDocument}}...</button> -->
+         
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      
+        <!-- old button  -->
+        <button type="button" class="btn cancle-documents" data-bs-dismiss="modal" (click)="closeModel()">Cancle</button>
+      
+        <button type="button" class="btn save-documents" data-bs-dismiss="modal" (click)="closeModel()">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+model-viewer {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 600px;
+    max-height: 600px;
+}

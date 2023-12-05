@@ -1,0 +1,118 @@
+ul.no-decoration {
+    list-style: none;
+  }
+  
+  ul.no-decoration li {
+    display: inline; /* or display: inline-block; */
+    margin-right: 10px; /* Add some spacing between items */
+  }
+  .pr_switch_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.color-swatch {
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; /* Add margin between swatches */
+    border: 1px solid #ddd; /* Add border for better visibility */
+}
+
+.color-swatch.active {
+    border-width: 2px; 
+}
+.selected {
+    border: 3px solid #afdae0;
+    border-color: #1196AB; 
+    z-index: 1;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    
+}
+.additional-image.selected-image {
+  border: 3px solid #1196AB; 
+  border-radius: 4px;
+}
+.zoomable:hover {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.zoomable.zoomed {
+  transform: scale(1.2);
+}
+model-viewer {
+  display: block;
+  width: 100vw;
+  height: 100vw;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+/* main image  */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  padding: 10px;
+  max-width: 100%;
+}
+.image-containers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-left: 15px;
+  /* height: 540px; */
+  overflow: hidden;
+  /* padding: 10px; */
+  max-width: 100%;
+}
+.additional-images{
+  width: 70%;
+  height: 70%;
+}
+.additional-image {
+  width: 70%;
+  height: 100%;
+  /* transition: transform 0.3s ease-in-out; */
+  max-width: 100%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Adjust the alpha channel for the desired overlay color */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}@media (max-width: 768px) {
+  .image-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .additional-image{
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/* .image-container:hover .additional-image {
+  transform: scale(1.2); /* Adjust the scale factor for the desired zoom level */
+/* } */ 
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
